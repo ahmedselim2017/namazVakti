@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="224.0" stylesheets="@giris.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.girisController">
+   <center>
+      <GridPane hgap="8.0" vgap="10.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ComboBox fx:id="cmbSehir" onAction="#sehirDegis" prefHeight="27.0" prefWidth="160.0" promptText="Yaşadığınız Şehir" GridPane.rowIndex="1" />
+            <ComboBox fx:id="cmbIlce" prefHeight="27.0" prefWidth="160.0" promptText="Yaşadığınız İlçe" GridPane.rowIndex="2" />
+            <Button fx:id="btnGiris" mnemonicParsing="false" onAction="#giris" text="Giriş" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></Button>
+         </children>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="6.0" />
+         </padding>
+      </GridPane>
+   </center>
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="btnCikis" fitHeight="85.0" fitWidth="10.0" onMouseClicked="#cikis" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cikis.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

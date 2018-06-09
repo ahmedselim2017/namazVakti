@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="bpAnaLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#mauseSurukle" onMousePressed="#mauseBas" prefHeight="400.0" prefWidth="600.0" stylesheets="@anaSayfa.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.anaSayfaController">
+   <center>
+      <BorderPane BorderPane.alignment="BOTTOM_CENTER">
+         <bottom>
+            <GridPane hgap="8.0" vgap="10.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" text="İmsak" textFill="#5e5d5d" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="Akşam" textFill="#5e5d5d" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="Öğle" textFill="#5e5d5d" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="İkindi" textFill="#5e5d5d" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="Yatsı" textFill="#5e5d5d" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="20.0" prefWidth="107.0" text="Gün/Vakit" textFill="#727171">
+                     <font>
+                        <Font name="Arial Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun1" text="31.12.2018" textFill="#5e5d5d" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun5" text="31.12.2018" textFill="#5e5d5d" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun2" text="31.12.2018" textFill="#5e5d5d" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun3" text="31.12.2018" textFill="#5e5d5d" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun4" text="31.12.2018" textFill="#5e5d5d" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun1Imsak" text="24.59" textFill="#727272" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun1Ogle" text="24.59" textFill="#727272" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun2Imsak" text="24.59" textFill="#727272" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun1Ikindi" text="24.59" textFill="#727272" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun1Aksam" text="24.59" textFill="#727272" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun1Yatsi" text="24.59" textFill="#727272" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun2Ogle" text="24.59" textFill="#727272" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun2Ikindi" text="24.59" textFill="#727272" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun2Aksam" text="24.59" textFill="#727272" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun2Yatsi" text="24.59" textFill="#727272" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun3Imsak" text="24.59" textFill="#727272" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun3Ogle" text="24.59" textFill="#727272" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun3Ikindi" text="24.59" textFill="#727272" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun3Aksam" text="24.59" textFill="#727272" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun3Yatsi" text="24.59" textFill="#727272" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun4Imsak" text="24.59" textFill="#727272" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun4Ogle" text="24.59" textFill="#727272" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun4Ikindi" text="24.59" textFill="#727272" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun4Aksam" text="24.59" textFill="#727272" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun4Yatsi" text="24.59" textFill="#727272" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun5Imsak" text="24.59" textFill="#727272" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun5Ogle" text="24.59" textFill="#727272" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun5Ikindi" text="24.59" textFill="#727272" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun5Aksam" text="24.59" textFill="#727272" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGun5Yatsi" text="24.59" textFill="#727272" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </GridPane>
+         </bottom>
+         <center>
+            <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblYer" text="İstanbul / Başakşehir" textFill="#5e5d5d">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" maxHeight="-Infinity">
+                     <children>
+                        <Label fx:id="lblKalanSaat" alignment="CENTER" contentDisplay="CENTER" text="Akşam:   -03.25.95" textFill="#727272">
+                           <font>
+                              <Font name="Arial Bold Italic" size="40.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Label fx:id="lblZaman" text="10 Haziran 2018 / 20 Ramazan 1455" textFill="#5e5d5d">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </center>
+   <top>
+      <BorderPane BorderPane.alignment="CENTER">
+         <center>
+            <HBox BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="butonCikis" fitHeight="13.0" fitWidth="13.0" onMouseClicked="#cikis" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cikis.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="7.0" left="7.0" top="7.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="btnKucult" fitHeight="13.0" fitWidth="13.0" onMouseClicked="#kucult" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@kucult.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="7.0" left="7.0" top="7.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </top>
+</BorderPane>

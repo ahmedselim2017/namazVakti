@@ -1,0 +1,6 @@
+.root {
+    -fx-background-color: rgb(170, 229, 251);
+}
+.scroll-bar{
+    -fx-background-color: black;
+}
